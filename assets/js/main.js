@@ -1083,3 +1083,8 @@ if ($('.text-anime-style-1').length) {
 })(jQuery);
 
 
+/*DOWNLOAD E-CATALOGUE BROCHURES-CATALOGUE*/
+function pdfbtn() {
+  var pdfUrl = './siva-construtions.pdf';
+  window.open(pdfUrl, '_blank');
+}
