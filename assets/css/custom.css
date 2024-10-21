@@ -1,0 +1,13 @@
+
+/* Header Style */
+.homepage5-body .header-area.homepage5 .container-fluid {
+    padding: 0%;
+}
+.header-area.homepage5.sticky .header-elements {
+    padding: 20px 32px;
+    transition: all 0.4s;
+}
+.homepage5-body .header-area.homepage5 .header-top-area::after,
+.homepage5-body .header-area.homepage5 .header-elements::after {
+    display: none;
+}
