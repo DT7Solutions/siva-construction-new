@@ -154,3 +154,9 @@
         margin: 1% 0%;
     }
 }
+
+.property3-section-area .property-images .img2 {
+    position: relative;
+    margin-top: -70px;
+    margin-left: 100px;
+}
