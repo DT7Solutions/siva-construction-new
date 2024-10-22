@@ -114,6 +114,12 @@
     display: none;
 }
 
+/* About Section */
+.property-content {
+    margin-left: 7.5% !important;
+}
+
+
 /* Footer */
 .footer4-section-area {
     background: url(/assets/img/bg/footer-bg.webp);
