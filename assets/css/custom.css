@@ -122,12 +122,6 @@
 
 /* Footer */
 .footer4-section-area {
-    background: url(/assets/img/bg/footer-bg.webp);
-    background-position: bottom center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 1;
     padding: 80px 0px 0px;
 }
 .footer-menu .menu {
@@ -165,4 +159,24 @@
     position: relative;
     margin-top: -70px;
     margin-left: 100px;
+}
+
+
+
+/* BG For All Sections */
+.others1-section-area {
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/bg/records-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer4-section-area {
+    background: url(../img/bg/footer-bg.webp);
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
 }
