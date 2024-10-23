@@ -118,6 +118,13 @@
 .property-content {
     margin-left: 7.5% !important;
 }
+/* About Page Section */
+.about1-section-area .about-header .designation {
+    font-size: 16px;
+}
+.about1-section-area .about-header p {
+    text-align: justify;
+}
 
 /* Our Assets Section */
 .apartment1-section-area .apartment-boxarea .content-area {
@@ -171,6 +178,14 @@
 
 
 /* BG For All Sections */
+.about-area-bg {
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/bg/about-us-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .others1-section-area {
     position: relative;
     z-index: 1;
