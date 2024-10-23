@@ -119,6 +119,10 @@
     margin-left: 7.5% !important;
 }
 
+/* Our Assets Section */
+.apartment1-section-area .apartment-boxarea .content-area {
+    padding: 24px 20px;
+}
 .apartment5-area {
     height: 806px;
 }
