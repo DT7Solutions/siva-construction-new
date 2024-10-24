@@ -1088,3 +1088,44 @@ function pdfbtn() {
   var pdfUrl = './siva-construtions.pdf';
   window.open(pdfUrl, '_blank');
 }
+
+function getgeolocations(){
+  // Check if geolocation is available
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+    
+      fetch('https://ipapi.co/json/')
+        .then(response => response.json())
+        .then(data => {
+          const country = data.country_code;
+          
+          // Redirect based on country code
+          switch (country) {
+            case 'US':
+              window.location.href = "https://us.example.com";
+              break;
+            case 'IN':
+              window.location.href = "https://in.example.com";
+              break;
+            case 'UK':
+              window.location.href = "https://uk.example.com";
+              break;
+            default:
+              window.location.href = "https://global.example.com";
+              break;
+          }
+        });
+      
+    }, function(error) {
+      console.log("Geolocation is not enabled.");
+      // Redirect to a default page if location is not available
+      window.location.href = "https://global.example.com";
+    });
+  } else {
+    // Geolocation is not supported
+    window.location.href = "https://global.example.com";
+  }
+
+}
