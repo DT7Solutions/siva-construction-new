@@ -517,6 +517,22 @@ blockquote span{
     transition: 0.4s;
 }
 
+
+/* Projects Details Pages */
+.about7-section-area {
+    position: relative;
+    z-index: 1;
+    height: auto;
+}
+.gallery4-section-area .gallery-images-slider .owl-nav button {
+    color: var(--primary-color);
+    background: var(--sec-light-bg);
+}
+.gallery4-section-area .gallery-images-slider .owl-nav button:hover {
+    background: var(--secondary-color);
+}
+
+
 /* Responsive Mode */
 @media only screen and (max-width: 768px) {
     .footer-menu .menu {
@@ -536,7 +552,8 @@ blockquote span{
 
 
 /* BG For All Sections */
-.about-area-bg {
+.about-area-bg,
+.ongoing-project-bg {
     position: relative;
     z-index: 1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg/about-us-bg.webp);
