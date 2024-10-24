@@ -438,6 +438,7 @@ img {
     transform: translatex(0);
   }
 }
+
 :root {
   --ztc-text-text-1: #fff;
   --ztc-text-text-2: #070610;
