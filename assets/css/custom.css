@@ -122,6 +122,14 @@ a:hover {
 .progress-wrap:hover::after {
     color: var(--primary-color);
 }
+.mobile-sidebar.mobile-sidebar2 .footer1-contact-info .social-links-mobile-menu ul li a {
+    background: var(--secondary-color);
+    line-height: 18px;
+}
+.mobile-sidebar.mobile-sidebar2 .footer1-contact-info .social-links-mobile-menu ul li a:hover {
+    background: var(--primary-color);
+}
+
 
 /* Header Style */
 .homepage5-body .header-area.homepage5 .container-fluid {
@@ -321,6 +329,13 @@ blockquote span{
 
 
 /* Ongoing Project section */
+.about3-section-area .about-slider-area .owl-nav button {
+    display: none;
+}
+.about7-section-area .service-images-area .img1 img {
+    height: 100%;
+    object-fit: contain;
+}
 .apartment6-section-area .apartment-featured-area .content-area ul {
     padding-bottom: 2.5%;
     border-bottom: 1px solid #F1F1F2;
@@ -350,6 +365,51 @@ blockquote span{
 }
 .apartment-details-left .apartment-author-area .list-area {
     background: var(--sec-light-bg);
+}
+
+/* Completed Projects */
+.service1-section-area .service-slider-area .owl-nav button {
+    background: var(--sec-light-bg);
+    color: var(--primary-color);
+}
+.service1-section-area .service-slider-area .owl-nav button:hover {
+    background: var(--secondary-color);
+}
+.service1-section-area .service-slider-area .service-slider-box .content a {
+    font-family: var(--ztc-family-font2);
+    font-size: var(--ztc-font-size-font-s18);
+    text-align: center;
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+.service1-section-area .service-slider-area .service-slider-box .btn-area1 a {
+    height: 64px;
+    width: 64px;
+    text-align: center;
+    line-height: 64px;
+    border-radius: 50%;
+    transition: all 0.4s;
+    background: var(--secondary-color);
+    color: var(--ztc-text-text-1);
+    display: inline-block;
+    font-size: var(--ztc-font-size-font-s24);
+    transform: rotate(-45deg);
+}
+.service1-section-area .service-slider-area .service-slider-box .img1:hover::after {
+    transition: all 1s;
+    opacity: 0.1;    
+}
+.service1-section-area .service-slider-area .service-slider-box .img1::after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: all 0.4s;
+    background: var(--black-color);
+    opacity: 0.6;
+    z-index: 1;
 }
 
 
@@ -560,38 +620,34 @@ blockquote span{
 
 /* BG For All Sections */
 .about-area-bg,
-.ongoing-project-bg {
-    position: relative;
-    z-index: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg/about-us-bg.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.others1-section-area {
-    position: relative;
-    z-index: 1;
-    background-image: url(../img/bg/records-bg.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.contact-area-bg {
-    position: relative;
-    z-index: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg/contact-bg.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+.ongoing-project-bg,
+.completed-project-bg,
+.others1-section-area,
+.contact-area-bg,
 .contact7-section-area {
     position: relative;
     z-index: 1;
-    background-image: url(../img/bg/contact-bg.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+.about-area-bg,
+.ongoing-project-bg,
+.completed-project-bg {    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg/about-us-bg.webp);
+}
+.others1-section-area {
+    background-image: url(../img/bg/records-bg.webp);
+}
+.contact-area-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg/contact-bg.webp);
+}
+.contact7-section-area {
+    background-image: url(../img/bg/contact-bg.webp);
+}
+
 .footer4-section-area {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/bg/footer-bg.webp);
     background-position: bottom center;
