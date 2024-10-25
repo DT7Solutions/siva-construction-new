@@ -127,8 +127,11 @@ a:hover {
 .homepage5-body .header-area.homepage5 .container-fluid {
     padding: 0%;
 }
+.homepage5-body .header-area.homepage5 .header-elements {
+    padding: 10px 32px;
+}
 .header-area.homepage5.sticky .header-elements {
-    padding: 20px 32px;
+    padding: 10px 32px;
     transition: all 0.4s;
 }
 .homepage5-body .header-area.homepage5 .header-top-area::after,
@@ -140,7 +143,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     background: var(--ztc-bg-bg-1);
-    padding: 10px 32px;
+    padding: 0px 32px;
     border-bottom: 1px solid #E7E7E8;
     transition: all 0.4s;
     opacity: 1;
@@ -345,6 +348,10 @@ blockquote span{
     font-size: var(--ztc-font-size-font-s24);
     transform: rotate(-45deg);
 }
+.apartment-details-left .apartment-author-area .list-area {
+    background: var(--sec-light-bg);
+}
+
 
 /* Our Records */
 .others1-section-area .others-box:hover {
