@@ -4,6 +4,7 @@
     --secondary-color: #ab7f30;
     --white-color: #ffffff;
     --black-color: #000000;
+    --light-bg: rgba(0, 0, 0, 0.6);
     --pri-light-bg: rgba(141, 77, 46, 0.1);
     --sec-light-bg: rgba(171, 127, 48, 0.1);
 }
@@ -222,7 +223,8 @@ a:hover {
     font-weight: var(--ztc-weight-bold);
     line-height: 24px;
 }
-.header-carousel-area2 .owl-nav button {
+.header-carousel-area2 .owl-nav button,
+.header-carousel-area3 .owl-nav button {
     height: 48px;
     width: 48px;
     text-align: center;
@@ -234,7 +236,8 @@ a:hover {
     background: var(--white-color) !important;
     color: var(--primary-color) !important;
 }
-.header-carousel-area2 .owl-nav button:hover {
+.header-carousel-area2 .owl-nav button:hover,
+.header-carousel-area3 .owl-nav button:hover {
     transition: 0.4s;
     background: var(--secondary-color) !important;
     color: var(--ztc-text-text-1) !important;
@@ -366,6 +369,19 @@ blockquote span{
 .apartment-details-left .apartment-author-area .list-area {
     background: var(--sec-light-bg);
 }
+.apartment6-section-area .apartment-featured-area .content-area a {
+    color: var(--ztc-text-text-17);
+    font-family: var(--ztc-family-font2);
+    font-size: var(--ztc-font-size-font-s24);
+    font-style: normal;
+    font-weight: var(--ztc-weight-bold);
+    line-height: 24px;
+    transition: all 0.4s;
+    display: inline-block;
+}
+.apartment6-section-area .apartment-featured-area .content-area a:hover {
+    color: var(--secondary-color);
+}
 
 /* Completed Projects */
 .service1-section-area .service-slider-area .owl-nav button {
@@ -413,6 +429,21 @@ blockquote span{
 }
 
 
+/* Our Features */
+.service2-section-area .amenities-boxarea .content-area a {
+    color: var(--ztc-text-text-5);
+    font-family: var(--ztc-family-font2);
+    font-size: var(--ztc-font-size-font-s24);
+    font-style: normal;
+    font-weight: var(--ztc-weight-bold);
+    line-height: 24px;
+    display: inline-block;
+    transition: 0.4s;
+}
+.service2-section-area .amenities-boxarea .content-area a:hover {
+    color: var(--secondary-color);
+}
+
 /* Our Records */
 .others1-section-area .others-box:hover {
     background: var(--secondary-color);
@@ -440,19 +471,30 @@ blockquote span{
 }
 .apartment1-section-area .apartment-boxarea .content-area a {
     color: var(--primary-color);
-    font-family: var(--ztc-family-font1);
+    font-family: var(--ztc-family-font2);
     font-size: var(--ztc-font-size-font-s24);
     font-style: normal;
-    font-weight: var(--ztc-weight-regular);
+    font-weight: var(--ztc-weight-bold);
     line-height: 24px;
     display: inline-block;
     transition: 0.4s;
+}
+.apartment1-section-area .apartment-boxarea .content-area a:hover {
+    color: var(--secondary-color) ;
 }
 .apartment5-area {
     height: 806px;
 }
 
 /* Testimonials Section */
+.testimonial4-section-area .author a {
+    font-size: var(--ztc-font-size-font-s24);
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--ztc-text-text-2);
+    font-weight: var(--ztc-weight-semibold);
+    font-family: var(--ztc-family-font2);
+}
 .testimonial1-section-area .testimonial-arrows button,
 .testimonial4-section-area .testimonial-arrows .slick-arrow button {
     color: var(--primary-color);
@@ -468,7 +510,10 @@ blockquote span{
 .testimonial4-section-area .single-testimonial-nav.slick-slide.slick-center img {
     border: 1px solid var(--secondary-color);
 }
-
+.testimonial1-section-area .testimonial-slider-area .testimonial-box .auhtor-area .text a {
+    font-weight: var(--ztc-weight-semibold);
+    font-family: var(--ztc-family-font2);
+}
 
 
 /* Blogs Section */
@@ -480,6 +525,10 @@ blockquote span{
     font-weight: var(--ztc-weight-semibold);
     line-height: 28px;
     transition: all 0.4s;
+}
+.blog-section-area .blog-boxarea .content-area a:hover,
+.blog-section-area .blog-boxarea .content-area a.readmore:hover {
+    color: var(--secondary-color);
 }
 
 
@@ -655,4 +704,33 @@ blockquote span{
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
+}
+
+
+/* Group Assets */
+.header-carousel-area3 .main-hero-area {
+    position: relative;
+    z-index: 1;
+    padding: 280px 0 100px;
+    overflow: hidden;
+}
+.header-carousel-area3 .main-hero-area::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.4s;
+    background: var(--secondary-color);
+    opacity: 0.75;
+    z-index: -2;
+}
+.gallery-v2-section-area .gallery3-slider-area .owl-nav button {
+    color: var(--primary-color);
+    background: var(--sec-light-bg);
+}
+.gallery-v2-section-area .gallery3-slider-area .owl-nav button:hover {
+    background: var(--secondary-color);
+    color: var(--white-color);
 }
