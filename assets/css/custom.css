@@ -161,7 +161,12 @@ a:hover {
     z-index: 1;
 }
 .homepage5-body .header-area.homepage5 .header-top-area ul li {
-    margin: 2.5% 0% !important;
+    margin: 1% 1.5% !important;
+}
+.homepage5-body .header-area.homepage5 .header-top-area ul li a i {
+    font-size: var(--ztc-font-size-font-s16);
+    color: var(--secondary-color);
+    margin: 0 10px 0 0;
 }
 .social-links {
     display: inline-block;
