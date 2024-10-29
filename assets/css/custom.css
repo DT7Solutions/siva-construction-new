@@ -358,6 +358,9 @@ blockquote span{
     transition: all 0.4s;
     display: inline-block;
 }
+.apartment6-section-area .apartment-featured-area .content-area .single-btn a:hover {
+    color: var(--ztc-text-text-1);
+}
 .apartment1-section-area .apartment-boxarea .arrow a {
     height: 64px;
     width: 64px;
