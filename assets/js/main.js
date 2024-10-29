@@ -1083,6 +1083,34 @@ if ($('.text-anime-style-1').length) {
 })(jQuery);
 
 
+/*======== Modal Form Submition========*/
+$(document).ready(function() {
+  // Initialize EmailJS with your public key
+  emailjs.init("your_public_key");
+  document.getElementById('quote-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    document.getElementById('submit-button').disabled = true;
+
+    // Send form data using EmailJS
+    emailjs.send('your_service_id', 'your_template_id', this)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+
+        document.getElementById('quote-form').style.display = 'none';
+        document.getElementById('success-message').style.display = 'block';
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert('There was an error submitting the form. Please try again later.');
+        document.getElementById('quote-form').style.display = 'none';
+        document.getElementById('success-message').style.display = 'block';
+  
+        document.getElementById('submit-button').disabled = false;
+      });
+  });
+}
+);
+
+
 /*DOWNLOAD E-CATALOGUE BROCHURES-CATALOGUE*/
 function pdfbtn() {
   var pdfUrl = './siva-construtions.pdf';

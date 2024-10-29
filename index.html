@@ -108,7 +108,7 @@
               </ul>
             </div>
             <div class="btn-area">
-              <a href="#" class="header-btn2" onclick="pdfbtn()">Get Brochure <i class="fas fa-download"></i></a>
+              <a href="#" class="header-btn2" data-bs-toggle="modal" data-bs-target="#quoteModal">Get Brochure <i class="fas fa-download"></i></a>
             </div>
             <div class="body-overlay"></div>
           </div>
@@ -118,6 +118,55 @@
   </div>
 </header>
 <!--=====HEADER END =======-->
+
+<!-- =====Modal Form Start===== -->
+<div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="quoteModalLabel">Get a Free Quote</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form Section -->
+        <form id="quote-form">
+          <div class="mb-3">
+            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required>
+          </div>
+          <div class="mb-3">
+            <select class="form-select" name="service" required>
+              <option value="" disabled selected>Select Enquiry Type</option>
+              <option value="independent-houses">Independent Houses</option>
+              <option value="apartments">Apartments</option>
+              <option value="villas">Villas</option>
+              <option value="parks">Parks</option>
+              <option value="residential-options">Residential Options</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="header-btn2" id="submit-button">Submit a Quote</button>
+          </div>
+        </form>
+
+        <!-- Success Message & Download Button -->
+        <div id="success-message" class="text-center mt-4" style="display:none;">
+          <p>Thank you for submitting your information! You can download our brochure below.</p>
+          <div class="my-3 header-btn2" onclick="pdfbtn()">Download Brochure <i class="fas fa-download"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- =====Modal Form End===== -->
 
 <!--===== MOBILE HEADER STARTS =======-->
 <div class="mobile-header mobile-haeder2 d-block d-lg-none">
@@ -1055,6 +1104,7 @@
 <script src="assets/js/plugins/ScrollTrigger.min.js"></script>
 <script src="assets/js/plugins/Splitetext.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 </body>
 </html>

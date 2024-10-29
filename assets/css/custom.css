@@ -133,6 +133,12 @@ a:hover {
 
 
 /* Header Style */
+.homepage5-body .header-area.homepage5 {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.4s;
+}
 .homepage5-body .header-area.homepage5 .container-fluid {
     padding: 0%;
 }
@@ -247,6 +253,35 @@ a:hover {
     background: var(--secondary-color) !important;
     color: var(--ztc-text-text-1) !important;
 }
+
+/* Modal Form */
+.modal.fade .modal-dialog {
+    transition: transform .3s ease-out;
+    transform: translate(0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+textarea.form-control {
+    height: 125px;
+    min-height: calc(1.5em + .75rem + 2px);
+}
+.nice-select {
+    width: 100%;
+    float: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.nice-select:after {
+    display: none;
+}
+.nice-select.open .list {
+    width: 100%;
+}
+
 
 /* About Section */
 .property-content {
