@@ -119,6 +119,61 @@
 </header>
 <!--=====HEADER END =======-->
 
+<!-- =====Modal Form Start===== -->
+<div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="quoteModalLabel">Get a Free Quote</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form Section -->
+        <form id="quote-form">
+          <div class="mb-3">
+            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required>
+          </div>
+          <div class="mb-3">
+            <select class="form-select" name="service" required>
+              <option value="" disabled selected>Select Enquiry Type</option>
+              <option value="independent-houses">Independent Houses</option>
+              <option value="apartments">Apartments</option>
+              <option value="villas">Villas</option>
+              <option value="parks">Parks</option>
+              <option value="residential-options">Residential Options</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="header-btn2" id="submit-button">Submit a Quote</button>
+          </div>
+        </form>
+
+        <!-- Success Message & Download Button -->
+        <div id="success-message" class="text-center mt-4" style="display:none;">
+          <p>Thank you for sharing your details! Click below to download our brochure.</p>
+          <div class="my-3 header-btn2" onclick="pdfbtn()">Download Brochure <i class="fas fa-download"></i></div>
+        </div>
+        <!-- Error Message -->
+        <div id="error-message" class="text-center mt-4" style="display:none;">
+          <img src="./assets/img/icons/comic.svg" alt="oops svg">
+          <p>Something went wrong. Please try again.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- =====Modal Form End===== -->
+
 <!--===== MOBILE HEADER STARTS =======-->
 <div class="mobile-header mobile-haeder2 d-block d-lg-none">
   <div class="container-fluid">
@@ -304,7 +359,7 @@
                             </div>
                             <div class="space40"></div>
                             <div class="btn-area1 aos-init" data-aos="fade-up" data-aos-duration="1200">
-                                <a href="#" class="header-btn2" onclick="pdfbtn()">Get Brochure Now<i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="#" class="header-btn2" onclick="ovpdfbtn()">Get Brochure Now<i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>                        
                       </div>

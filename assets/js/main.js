@@ -1100,9 +1100,8 @@ $(document).ready(function() {
         document.getElementById('success-message').style.display = 'block';
       }, function(error) {
         console.log('FAILED...', error);
-        alert('There was an error submitting the form. Please try again later.');
         document.getElementById('quote-form').style.display = 'none';
-        document.getElementById('success-message').style.display = 'block';
+        document.getElementById('error-message').style.display = 'block';
   
         document.getElementById('submit-button').disabled = false;
       });
@@ -1113,6 +1112,18 @@ $(document).ready(function() {
 
 /*DOWNLOAD E-CATALOGUE BROCHURES-CATALOGUE*/
 function pdfbtn() {
-  var pdfUrl = './siva-construtions.pdf';
+  var pdfUrl = './assets/files/orion-villas-e-brochure.pdf';
+  window.open(pdfUrl, '_blank');
+}
+function ovpdfbtn() {
+  var pdfUrl = './assets/files/orion-villas-e-brochure.pdf';
+  window.open(pdfUrl, '_blank');
+}
+function gvpdfbtn() {
+  var pdfUrl = './assets/files/golden-vistas-e-brochure.pdf';
+  window.open(pdfUrl, '_blank');
+}
+function lmpdfbtn() {
+  var pdfUrl = './assets/files/landmark-one-e-brochure.pdf';
   window.open(pdfUrl, '_blank');
 }
