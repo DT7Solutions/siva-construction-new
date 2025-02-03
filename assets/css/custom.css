@@ -194,6 +194,7 @@ a:hover {
 }
 .homepage5-body .header-area.homepage5 .header-elements .main-menu ul li ul.dropdown-padding {
     width: 250px;
+    top: 35px !important;
 }
 .homepage5-body .header-area.homepage5 .header-elements .main-menu ul.small-menu {
     width: 250px;
@@ -253,6 +254,9 @@ a:hover {
     transition: 0.4s;
     background: var(--secondary-color) !important;
     color: var(--ztc-text-text-1) !important;
+}
+.header-carousel-area2 .main-hero-area .auhtor-box {
+    display: none;
 }
 
 @media only screen and (max-width: 991px) {
@@ -666,6 +670,12 @@ blockquote span{
     color: var(--white-color);
     font-size: var(--ztc-font-size-font-s16);
     margin: 0 4px 0 0;
+}
+.footer4-section-area .footer-menu-area .footer-elements ul li a {
+    padding: 0px 10px;
+}
+.footer4-section-area .footer-menu-area .footer-call-area ul li:nth-child(1) {
+    margin: 0px;
 }
 .footer4-section-area .footer-menu-area .footer-elements .footer-social ul li a:hover {
     background: var(--primary-color);

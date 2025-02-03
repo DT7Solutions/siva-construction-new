@@ -97,7 +97,7 @@
                 <li>
                   <a href="#">Group Assets <i class="fa-solid fa-angle-down"></i></a>
                   <ul class="dropdown-padding">
-                      <li><a href="./shree-conventions">Shree Convention</a></li>
+                      <li><a href="https://shreeconvention.com" target="_blank" rel="noopener noreferrer">Shree Convention</a></li>
                       <li><a href="./siva-city-center">Siva City Center</a></li>
                       <li><a href="./siva-cinemas">Siva Cinemas</a></li>
                       <li><a href="./siddhartha-gastro-care">Siddhartha Gastro Care</a></li>
@@ -140,13 +140,11 @@
             <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required>
           </div>
           <div class="mb-3">
-            <select class="form-select" name="service" required>
+            <select class="form-select" name="service" id="service-select" required>
               <option value="" disabled selected>Select Enquiry Type</option>
-              <option value="independent-houses">Independent Houses</option>
               <option value="apartments">Apartments</option>
               <option value="villas">Villas</option>
-              <option value="parks">Parks</option>
-              <option value="residential-options">Residential Options</option>
+              <option value="other">Other</option>
             </select>
           </div>
           <div class="mb-3">
@@ -160,7 +158,9 @@
         <!-- Success Message & Download Button -->
         <div id="success-message" class="text-center mt-4" style="display:none;">
           <p>Thank you for sharing your details! Click below to download our brochure.</p>
-          <div class="my-3 header-btn2" onclick="pdfbtn()">Download Brochure <i class="fas fa-download"></i></div>
+          <div class="my-3 header-btn2" id="download-btn">
+            Download Brochure <i class="fas fa-download"></i>
+          </div>
         </div>
         <!-- Error Message -->
         <div id="error-message" class="text-center mt-4" style="display:none;">
@@ -220,7 +220,7 @@
       <li>
         <a href="#">Group Assets</a>
         <ul class="sub-menu">
-            <li><a href="./shree-conventions">Shree Convention</a></li>
+            <li><a href="https://shreeconvention.com" target="_blank" rel="noopener noreferrer">Shree Convention</a></li>
             <li><a href="./siva-city-center">Siva City Center</a></li>
             <li><a href="./siva-cinemas">Siva Cinemas</a></li>
             <li><a href="./siddhartha-gastro-care">Siddhartha Gastro Care</a></li>
@@ -310,7 +310,7 @@
       <div class="row">
         <div class="col-lg-5">
           <div class="header-boxarea">
-            <h5><span><img src="assets/img/icons/target-icon1.svg" alt="target"></span>Duplex Villas Gated Communities</h5>
+            <h5><span><img src="assets/img/icons/target-icon1.svg" alt="target"></span>Triple Bedroom Apartments</h5>
            <div class="space20"></div>
             <h2>Siva Golden Vistas</h2>
             <div class="space28"></div>
@@ -506,7 +506,7 @@
                 <div class="space6"></div>
                 <div class="btn-area1">
                   <div class="single-btn">
-                    <a href="./siva-golden-vistas" class="header-btn2">For Mode Details &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="./siva-golden-vistas" class="header-btn2">For More Details &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -539,7 +539,7 @@
                 <div class="space6"></div>
                 <div class="btn-area1">
                   <div class="single-btn">
-                    <a href="./orion-villas" class="header-btn2">For Mode Details &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="./orion-villas" class="header-btn2">For More Details &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -628,35 +628,41 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="800">
         <div class="apartment-boxarea">
           <div class="img1">
-            <img src="assets/img/all-images/apartment/our-assets-shree-convention.webp" alt="Shree Conventions">
+            <img src="assets/img/all-images/assets/our-assets-shree-convention.webp" alt="Shree Conventions">
           </div>
           <div class="content-area text-center">
-            <a href="apartment-v1.html">Shree Conventions</a>
+            <a href="https://shreeconvention.com" target="_blank" rel="noopener noreferrer">Shree Conventions</a>
             <div class="space16"></div>
             <ul>
-              <li><a href="https://maps.app.goo.gl/VMfiGcrehZ3YZ7MC8" target="_blank"><img src="assets/img/icons/location1.svg" alt=""> Phase-2, MG Inner Ring Road, Guntur</a></li>
+              <li>
+                <a href="https://maps.app.goo.gl/VMfiGcrehZ3YZ7MC8" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/img/icons/location1.svg" alt=""> Phase-2, MG Inner Ring Road, Guntur
+                </a>
+              </li>
             </ul>
           </div>
           <div class="arrow">
-            <a href="apartment-v1.html"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://shreeconvention.com" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
-        </div>
+        </div>        
       </div>
 
       <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="900">
         <div class="apartment-boxarea">
           <div class="img1">
-            <img src="assets/img/all-images/apartment/our-assets-siva-city-center.webp" alt="Siva City Center">
+            <img src="assets/img/all-images/assets/our-assets-siva-city-center.webp" alt="Siva City Center">
           </div>
           <div class="content-area text-center">
-            <a href="apartment-v1.html">Siva City Center</a>
+            <a href="./siva-city-center">Siva City Center</a>
             <div class="space16"></div>
             <ul>
               <li><a href="https://maps.app.goo.gl/vH4unXKBW1x1DuPW6" target="_blank"><img src="assets/img/icons/location1.svg" alt=""> Ring Rd, Chandramouli Nagar, Guntur</a></li>
             </ul>
           </div>
           <div class="arrow">
-            <a href="apartment-v1.html"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="./siva-city-center"><i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -664,17 +670,17 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="1000">
         <div class="apartment-boxarea">
           <div class="img1">
-            <img src="assets/img/all-images/apartment/our-assets-siva-cinema.webp" alt="Siva Cinema">
+            <img src="assets/img/all-images/assets/our-assets-siva-cinema.webp" alt="Siva Cinema">
           </div>
           <div class="content-area text-center">
-            <a href="apartment-v1.html">Siva Cinema</a>
+            <a href="./siva-cinemas">Siva Cinema</a>
             <div class="space16"></div>
             <ul>
               <li><a href="https://maps.app.goo.gl/DFd2Lv741zrXuEYY8" target="_blank"><img src="assets/img/icons/location1.svg" alt=""> 17th Ln, Arundelpet, Guntur</a></li>
             </ul>
           </div>
           <div class="arrow">
-            <a href="apartment-v1.html"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="./siva-cinemas"><i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -682,17 +688,17 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="1100">
         <div class="apartment-boxarea">
           <div class="img1">
-            <img src="assets/img/all-images/apartment/our-assets-siddharth-gastro-care.webp" alt="Siddhartha Gastro Care">
+            <img src="assets/img/all-images/assets/our-assets-siddharth-gastro-care.webp" alt="Siddhartha Gastro Care">
           </div>
           <div class="content-area text-center">
-            <a href="apartment-v1.html">Siddhartha Gastro Care</a>
+            <a href="./siddhartha-gastro-care">Siddhartha Gastro Care</a>
             <div class="space16"></div>
             <ul>
               <li><a href="https://maps.app.goo.gl/8Q71J5QKgx2YHyGTA" target="_blank"><img src="assets/img/icons/location1.svg" alt=""> Kothapeta, Old Police Station Road, Guntur</a></li>
             </ul>
           </div>
           <div class="arrow">
-            <a href="apartment-v1.html"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="./siddhartha-gastro-care"><i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -717,17 +723,23 @@
           <div class="col-lg-6 col-md-12" data-aos="zoom-in" data-aos-duration="800">
             <div class="apartment-boxarea">
               <div class="img1">
-                <img src="assets/img/all-images/apartment/our-assets-shree-convention.webp" alt="Shree Conventions">
+                <img src="assets/img/all-images/assets/our-assets-shree-convention.webp" alt="Shree Conventions">
               </div>
               <div class="content-area text-center">
-                <a href="apartment-v1.html">Shree Conventions</a>
+                <a href="https://shreeconvention.com" target="_blank" rel="noopener noreferrer">Shree Conventions</a>
                 <div class="space16"></div>
                 <ul>
-                  <li><a href="https://maps.app.goo.gl/VMfiGcrehZ3YZ7MC8" target="_blank"><img src="assets/img/icons/location1.svg" alt=""> Phase-2, MG Inner Ring Road, Guntur</a></li>
+                  <li>
+                    <a href="https://maps.app.goo.gl/VMfiGcrehZ3YZ7MC8" target="_blank" rel="noopener noreferrer">
+                      <img src="assets/img/icons/location1.svg" alt=""> Phase-2, MG Inner Ring Road, Guntur
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div class="arrow">
-                <a href="apartment-v1.html"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://shreeconvention.com" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -735,17 +747,17 @@
           <div class="col-lg-6 col-md-12" data-aos="zoom-in-up" data-aos-duration="900">
             <div class="apartment-boxarea">
               <div class="img1">
-                <img src="assets/img/all-images/apartment/our-assets-siva-city-center.webp" alt="Siva City Center">
+                <img src="assets/img/all-images/assets/our-assets-siva-city-center.webp" alt="Siva City Center">
               </div>
               <div class="content-area text-center">
-                <a href="apartment-v1.html">Siva City Center</a>
+                <a href="./siva-city-center">Siva City Center</a>
                 <div class="space16"></div>
                 <ul>
                   <li><a href="https://maps.app.goo.gl/vH4unXKBW1x1DuPW6" target="_blank"><img src="assets/img/icons/location1.svg" alt=""> Ring Rd, Chandramouli Nagar, Guntur</a></li>
                 </ul>
               </div>
               <div class="arrow">
-                <a href="apartment-v1.html"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="./siva-city-center"><i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -754,17 +766,17 @@
           <div class="col-lg-12 col-md-12" data-aos="zoom-in-up" data-aos-duration="1000">
             <div class="apartment-boxarea">
               <div class="img1">
-                <img src="assets/img/all-images/apartment/assets-siva-cinemas.webp" alt="Siva Cinema">
+                <img src="assets/img/all-images/assets/assets-siva-cinemas.webp" alt="Siva Cinema">
               </div>
               <div class="content-area text-center">
-                <a href="apartment-v1.html">Siva Cinema</a>
+                <a href="./siva-cinemas">Siva Cinema</a>
                 <div class="space16"></div>
                 <ul>
                   <li><a href="https://maps.app.goo.gl/DFd2Lv741zrXuEYY8" target="_blank"><img src="assets/img/icons/location1.svg" alt=""> 17th Ln, Arundelpet, Guntur</a></li>
                 </ul>
               </div>
               <div class="arrow">
-                <a href="apartment-v1.html"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="./siva-cinemas"><i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -773,17 +785,17 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="1100">
         <div class="apartment-boxarea">
           <div class="img1">
-            <img src="assets/img/all-images/apartment/assets-siddardhgastro.webp" alt="Siddhartha Gastro Care">
+            <img src="assets/img/all-images/assets/assets-siddardhgastro.webp" alt="Siddhartha Gastro Care">
           </div>
           <div class="content-area text-center">
-            <a href="apartment-v1.html">Siddhartha Gastro Care</a>
+            <a href="./siddhartha-gastro-care">Siddhartha Gastro Care</a>
             <div class="space16"></div>
             <ul>
               <li><a href="https://maps.app.goo.gl/8Q71J5QKgx2YHyGTA" target="_blank"><img src="assets/img/icons/location1.svg" alt=""> Kothapeta, Old Police Station Road, Guntur</a></li>
             </ul>
           </div>
           <div class="arrow">
-            <a href="apartment-v1.html"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="./siddhartha-gastro-care"><i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -1081,9 +1093,11 @@
             </div>
           </div>
           <div class="copyright-area">
-            <p>© 2024 Siva Constructions. All Rights Reserved </p>
             <ul>
-              <li>Designed By <a href="https://www.dt7.agency" target="_blank"> <strong>DT7.Agency</strong></a></li>
+              <li>© <span id="current-year"></span> <a href="./"><strong>Siva Constructions</strong></a>. All Rights Reserved.</li>
+            </ul>
+            <ul>
+              <li>Designed By <a href="https://www.dt7.agency" target="_blank" rel="noopener noreferrer"><strong>DT7.Agency</strong></a></li>
             </ul>
           </div>
         </div>

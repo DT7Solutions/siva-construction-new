@@ -97,7 +97,7 @@
                 <li>
                   <a href="#">Group Assets <i class="fa-solid fa-angle-down"></i></a>
                   <ul class="dropdown-padding">
-                      <li><a href="./shree-conventions">Shree Convention</a></li>
+                      <li><a href="https://shreeconvention.com" target="_blank" rel="noopener noreferrer">Shree Convention</a></li>
                       <li><a href="./siva-city-center">Siva City Center</a></li>
                       <li><a href="./siva-cinemas">Siva Cinemas</a></li>
                       <li><a href="./siddhartha-gastro-care">Siddhartha Gastro Care</a></li>
@@ -140,13 +140,11 @@
             <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required>
           </div>
           <div class="mb-3">
-            <select class="form-select" name="service" required>
+            <select class="form-select" name="service" id="service-select" required>
               <option value="" disabled selected>Select Enquiry Type</option>
-              <option value="independent-houses">Independent Houses</option>
               <option value="apartments">Apartments</option>
               <option value="villas">Villas</option>
-              <option value="parks">Parks</option>
-              <option value="residential-options">Residential Options</option>
+              <option value="other">Other</option>
             </select>
           </div>
           <div class="mb-3">
@@ -160,7 +158,9 @@
         <!-- Success Message & Download Button -->
         <div id="success-message" class="text-center mt-4" style="display:none;">
           <p>Thank you for sharing your details! Click below to download our brochure.</p>
-          <div class="my-3 header-btn2" onclick="pdfbtn()">Download Brochure <i class="fas fa-download"></i></div>
+          <div class="my-3 header-btn2" id="download-btn">
+            Download Brochure <i class="fas fa-download"></i>
+          </div>
         </div>
         <!-- Error Message -->
         <div id="error-message" class="text-center mt-4" style="display:none;">
@@ -220,7 +220,7 @@
       <li>
         <a href="#">Group Assets</a>
         <ul class="sub-menu">
-            <li><a href="./shree-conventions">Shree Convention</a></li>
+            <li><a href="https://shreeconvention.com" target="_blank" rel="noopener noreferrer">Shree Convention</a></li>
             <li><a href="./siva-city-center">Siva City Center</a></li>
             <li><a href="./siva-cinemas">Siva Cinemas</a></li>
             <li><a href="./siddhartha-gastro-care">Siddhartha Gastro Care</a></li>
@@ -692,9 +692,11 @@
             </div>
           </div>
           <div class="copyright-area">
-            <p>© 2024 Siva Constructions. All Rights Reserved </p>
             <ul>
-              <li>Designed By <a href="https://www.dt7.agency" target="_blank"> <strong>DT7.Agency</strong></a></li>
+              <li>© <span id="current-year"></span> <a href="./"><strong>Siva Constructions</strong></a>. All Rights Reserved.</li>
+            </ul>
+            <ul>
+              <li>Designed By <a href="https://www.dt7.agency" target="_blank" rel="noopener noreferrer"><strong>DT7.Agency</strong></a></li>
             </ul>
           </div>
         </div>

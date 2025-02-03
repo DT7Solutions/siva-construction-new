@@ -97,7 +97,7 @@
                 <li>
                   <a href="#">Group Assets <i class="fa-solid fa-angle-down"></i></a>
                   <ul class="dropdown-padding">
-                      <li><a href="./shree-conventions">Shree Convention</a></li>
+                      <li><a href="https://shreeconvention.com" target="_blank" rel="noopener noreferrer">Shree Convention</a></li>
                       <li><a href="./siva-city-center">Siva City Center</a></li>
                       <li><a href="./siva-cinemas">Siva Cinemas</a></li>
                       <li><a href="./siddhartha-gastro-care">Siddhartha Gastro Care</a></li>
@@ -140,13 +140,11 @@
             <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required>
           </div>
           <div class="mb-3">
-            <select class="form-select" name="service" required>
+            <select class="form-select" name="service" id="service-select" required>
               <option value="" disabled selected>Select Enquiry Type</option>
-              <option value="independent-houses">Independent Houses</option>
               <option value="apartments">Apartments</option>
               <option value="villas">Villas</option>
-              <option value="parks">Parks</option>
-              <option value="residential-options">Residential Options</option>
+              <option value="other">Other</option>
             </select>
           </div>
           <div class="mb-3">
@@ -160,7 +158,9 @@
         <!-- Success Message & Download Button -->
         <div id="success-message" class="text-center mt-4" style="display:none;">
           <p>Thank you for sharing your details! Click below to download our brochure.</p>
-          <div class="my-3 header-btn2" onclick="pdfbtn()">Download Brochure <i class="fas fa-download"></i></div>
+          <div class="my-3 header-btn2" id="download-btn">
+            Download Brochure <i class="fas fa-download"></i>
+          </div>
         </div>
         <!-- Error Message -->
         <div id="error-message" class="text-center mt-4" style="display:none;">
@@ -220,7 +220,7 @@
       <li>
         <a href="#">Group Assets</a>
         <ul class="sub-menu">
-            <li><a href="./shree-conventions">Shree Convention</a></li>
+            <li><a href="https://shreeconvention.com" target="_blank" rel="noopener noreferrer">Shree Convention</a></li>
             <li><a href="./siva-city-center">Siva City Center</a></li>
             <li><a href="./siva-cinemas">Siva Cinemas</a></li>
             <li><a href="./siddhartha-gastro-care">Siddhartha Gastro Care</a></li>
@@ -313,15 +313,16 @@
                 <img src="assets/img/elements/elements3.png" alt="elements">
             </div>
             <div class="header-heading2">
-                <h5><i class="fa-solid fa-location-dot"></i> Kothapeta, Old Police Station Road, Guntur</h5>
-           <div class="space20"></div>
-            <h2>Siddhartha Gastro Care</h2>
-            <div class="space20"></div>
-            <p>Siddhartha Gastro Care is a leading clinic in Guntur specializing in advanced gastroenterology. With expert care and modern technology, it provides comprehensive treatment for digestive health.</p>
-            <div class="space32"></div>
-            <div class="btn-area1">
-              <a href="#" target="_blank" class="header-btn2">Schedule A Visit &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+              <h5><i class="fa-solid fa-location-dot"></i> Kothapeta, Old Police Station Road, Guntur</h5>
+              <div class="space20"></div>
+              <h2>Siddhartha Gastro Care</h2>
+              <div class="space20"></div>
+              <p>Siddhartha Gastro Care is a leading clinic in Guntur specializing in advanced gastroenterology. With expert care
+                and modern technology, it provides comprehensive treatment for digestive health.</p>
+              <div class="space32"></div>
+              <div class="btn-area1">
+                <a href="./contact-us" class="header-btn2">Schedule A Visit &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -346,15 +347,16 @@
                 <img src="assets/img/elements/elements3.png" alt="elements">
             </div>
             <div class="header-heading2">
-                <h5><i class="fa-solid fa-location-dot"></i> Kothapeta, Old Police Station Road, Guntur</h5>
-           <div class="space20"></div>
-            <h2>Siddhartha Gastro Care</h2>
-            <div class="space20"></div>
-            <p>Siddhartha Gastro Care is a leading clinic in Guntur specializing in advanced gastroenterology. With expert care and modern technology, it provides comprehensive treatment for digestive health.</p>
-            <div class="space32"></div>
-            <div class="btn-area1">
-              <a href="#" target="_blank" class="header-btn2">Schedule A Visit &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+              <h5><i class="fa-solid fa-location-dot"></i> Kothapeta, Old Police Station Road, Guntur</h5>
+              <div class="space20"></div>
+              <h2>Siddhartha Gastro Care</h2>
+              <div class="space20"></div>
+              <p>Siddhartha Gastro Care is a leading clinic in Guntur specializing in advanced gastroenterology. With expert care
+                and modern technology, it provides comprehensive treatment for digestive health.</p>
+              <div class="space32"></div>
+              <div class="btn-area1">
+                <a href="./contact-us" class="header-btn2">Schedule A Visit &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -379,15 +381,16 @@
                 <img src="assets/img/elements/elements3.png" alt="elements">
             </div>
             <div class="header-heading2">
-                <h5><i class="fa-solid fa-location-dot"></i> Kothapeta, Old Police Station Road, Guntur</h5>
-           <div class="space20"></div>
-            <h2>Siddhartha Gastro Care</h2>
-            <div class="space20"></div>
-            <p>Siddhartha Gastro Care is a leading clinic in Guntur specializing in advanced gastroenterology. With expert care and modern technology, it provides comprehensive treatment for digestive health.</p>
-            <div class="space32"></div>
-            <div class="btn-area1">
-              <a href="#" target="_blank" class="header-btn2">Schedule A Visit &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+              <h5><i class="fa-solid fa-location-dot"></i> Kothapeta, Old Police Station Road, Guntur</h5>
+              <div class="space20"></div>
+              <h2>Siddhartha Gastro Care</h2>
+              <div class="space20"></div>
+              <p>Siddhartha Gastro Care is a leading clinic in Guntur specializing in advanced gastroenterology. With expert care
+                and modern technology, it provides comprehensive treatment for digestive health.</p>
+              <div class="space32"></div>
+              <div class="btn-area1">
+                <a href="./contact-us" class="header-btn2">Schedule A Visit &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -412,15 +415,16 @@
                 <img src="assets/img/elements/elements3.png" alt="elements">
             </div>
             <div class="header-heading2">
-                <h5><i class="fa-solid fa-location-dot"></i> Kothapeta, Old Police Station Road, Guntur</h5>
-           <div class="space20"></div>
-            <h2>Siddhartha Gastro Care</h2>
-            <div class="space20"></div>
-            <p>Siddhartha Gastro Care is a leading clinic in Guntur specializing in advanced gastroenterology. With expert care and modern technology, it provides comprehensive treatment for digestive health.</p>
-            <div class="space32"></div>
-            <div class="btn-area1">
-              <a href="#" target="_blank" class="header-btn2">Schedule A Visit &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+              <h5><i class="fa-solid fa-location-dot"></i> Kothapeta, Old Police Station Road, Guntur</h5>
+              <div class="space20"></div>
+              <h2>Siddhartha Gastro Care</h2>
+              <div class="space20"></div>
+              <p>Siddhartha Gastro Care is a leading clinic in Guntur specializing in advanced gastroenterology. With expert care
+                and modern technology, it provides comprehensive treatment for digestive health.</p>
+              <div class="space32"></div>
+              <div class="btn-area1">
+                <a href="./contact-us" class="header-btn2">Schedule A Visit &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -456,7 +460,7 @@
                               </p>                            
                               <div class="space20"></div>
                               <div class="btn-area1 aos-init" data-aos="fade-up" data-aos-duration="1200">
-                                <a href="#" target="_blank" class="header-btn2"> More About Us <i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="./contact-us" class="header-btn2"> More About Us <i class="fa-solid fa-arrow-right"></i></a>
                               </div>
                           </div>
                       </div>
@@ -488,7 +492,7 @@
                 <img src="./assets/img/all-images/siddhartha-gastro-care/siddarth-assets-img-1.webp" alt="siddhartha-gastro-care">
             </div>
             <div class="icons">
-              <a href="#" target="_blank"><i class="fa-solid fa-plus"></i></a>
+              <a href="#"><i class="fa-solid fa-plus"></i></a>
             </div>
           </div>
           <div class="content-area">
@@ -496,7 +500,7 @@
                 <img src="./assets/img/all-images/siddhartha-gastro-care/siddarth-assets-img-2.webp" alt="siddhartha-gastro-care">
             </div>
             <div class="icons">
-              <a href="#" target="_blank"><i class="fa-solid fa-plus"></i></a>
+              <a href="#"><i class="fa-solid fa-plus"></i></a>
             </div>
           </div>
           <div class="content-area">
@@ -504,7 +508,7 @@
                 <img src="./assets/img/all-images/siddhartha-gastro-care/siddarth-assets-img-3.webp" alt="siddhartha-gastro-care">
             </div>
             <div class="icons">
-              <a href="#" target="_blank"><i class="fa-solid fa-plus"></i></a>
+              <a href="#"><i class="fa-solid fa-plus"></i></a>
             </div>
           </div>
           <div class="content-area">
@@ -512,7 +516,7 @@
                 <img src="./assets/img/all-images/siddhartha-gastro-care/siddarth-assets-img-4.webp" alt="siddhartha-gastro-care">
             </div>
             <div class="icons">
-              <a href="#" target="_blank"><i class="fa-solid fa-plus"></i></a>
+              <a href="#"><i class="fa-solid fa-plus"></i></a>
             </div>
           </div>
         </div>
@@ -608,9 +612,11 @@
             </div>
           </div>
           <div class="copyright-area">
-            <p>© 2024 Siva Constructions. All Rights Reserved </p>
             <ul>
-              <li>Designed By <a href="https://www.dt7.agency" target="_blank"> <strong>DT7.Agency</strong></a></li>
+              <li>© <span id="current-year"></span> <a href="./"><strong>Siva Constructions</strong></a>. All Rights Reserved.</li>
+            </ul>
+            <ul>
+              <li>Designed By <a href="https://www.dt7.agency" target="_blank" rel="noopener noreferrer"><strong>DT7.Agency</strong></a></li>
             </ul>
           </div>
         </div>

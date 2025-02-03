@@ -1,5 +1,7 @@
 ;(function($){
 
+document.getElementById("current-year").textContent = new Date().getFullYear();
+
 $(document).ready(function(){
 
 //========== HEADER ACTIVE STRATS ============= //
@@ -1090,24 +1092,35 @@ $(document).ready(function() {
   document.getElementById('quote-form').addEventListener('submit', function(event) {
     event.preventDefault();
     document.getElementById('submit-button').disabled = true;
-
-    // Send form data using EmailJS
     emailjs.send('your_service_id', 'your_template_id', this)
       .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
-
         document.getElementById('quote-form').style.display = 'none';
         document.getElementById('success-message').style.display = 'block';
       }, function(error) {
         console.log('FAILED...', error);
         document.getElementById('quote-form').style.display = 'none';
         document.getElementById('error-message').style.display = 'block';
-  
         document.getElementById('submit-button').disabled = false;
       });
   });
-}
-);
+
+  // Function to dynamically select and download the correct brochure
+  document.getElementById("download-btn").addEventListener("click", function() {
+    var selectedService = document.getElementById("service-select").value;
+    var pdfUrl = '';
+
+    if (selectedService === "apartments") {
+      pdfUrl = './assets/files/apartments-brochure.pdf';
+    } else if (selectedService === "villas") {
+      pdfUrl = './assets/files/villas-brochure.pdf';
+    } else {
+      pdfUrl = './assets/files/general-brochure.pdf';
+    }
+    window.open(pdfUrl, '_blank');
+  });
+});
+
 
 
 /*DOWNLOAD E-CATALOGUE BROCHURES-CATALOGUE*/
