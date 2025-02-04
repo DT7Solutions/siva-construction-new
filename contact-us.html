@@ -322,58 +322,52 @@
                         <div class="col-lg-8">
                             <div class="contact-input-section">
                               <h2 class="text-anime-style-3">Get in Touch with Siva Constructions</h2>
-                              <div class="space16"></div>
+                              <div class="space10"></div>
                               <p>Start your construction journey with us. <br> Contact Siva Constructions for personalized consultations and expert solutions.</p>
-                              <div class="space12"></div>                              
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="space20"></div>
-                                        <div class="input-area">
-                                            <input type="text" placeholder="First Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="space20"></div>
-                                        <div class="input-area">
-                                            <input type="email" placeholder="Email">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="space20"></div>
-                                        <div class="input-area">
-                                            <input type="number" placeholder="Phone">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="space20"></div>
-                                        <div class="input-area">
-                                            <select name="country"  class="nice-select">
-                                                <option value="1" data-display="Subject*">Subject*</option>
-                                                <option value="">Option 01</option>
-                                                <option value="">Option 02</option>
-                                                <option value="">Option 03</option>
-                                                <option value="">Option 04</option>
-                                                <option value="">Option 05</option>
-                                                <option value="">Option 06</option>
-                                              </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="space20"></div>
-                                        <div class="input-area">
-                                            <textarea placeholder="Your Message*"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="space32"></div>
-                                        <div class="input-area text-end">
-                                          <button type="submit" class="header-btn2">Submit Your Inquiry &nbsp; <i class="fa-solid fa-paper-plane"></i></button>
-                                        </div>                                      
-                                    </div>
+                              <div class="space12"></div>
+                              <form id="contact-form" class="row">
+                                <div class="col-lg-6">
+                                  <div class="space10"></div>
+                                  <div class="input-area"><input type="text" name="name" placeholder="Your Full Name *" required></div>
                                 </div>
+                                <div class="col-lg-6">
+                                  <div class="space10"></div>
+                                  <div class="input-area"><input type="email" name="email" placeholder="Your Email Address *" required></div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="space10"></div>
+                                  <div class="input-area"><input type="tel" name="phone" placeholder="Your Contact Number *" required></div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="space10"></div>
+                                  <div class="input-area">
+                                    <select id="service-select" name="enquiry_type" class="nice-select" required>
+                                      <option value="" disabled selected>Select Your Enquiry Type *</option>
+                                      <option value="general">General Inquiry</option>
+                                      <option value="apartments">Apartments</option>
+                                      <option value="villas">Villas</option>
+                                      <option value="other">Other Related</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-lg-12">
+                                  <div class="space10"></div>
+                                  <div class="input-area">
+                                    <textarea name="message" placeholder="Your Message *" required></textarea>
+                                  </div>
+                                </div>
+                                <div class="col-lg-12">
+                                  <div class="space10"></div>
+                                  <div class="input-area">
+                                    <button type="submit" id="submit-btn" class="header-btn2">Submit Your Inquiry &nbsp; <i class="fa-solid fa-paper-plane"></i></button>
+                                  </div>
+                                </div>
+                              </form>
+                              <!-- Success & Error Messages -->
+                              <div class="form-response my-3">
+                                  <div id="success-message" style="display: none; color: green;">Thank you! Your message has been sent successfully.</div>
+                                  <div id="error-message" style="display: none; color: red;">Oops! Something went wrong. Please try again.</div>
+                              </div>                           
                             </div>
                         </div>
                         <div class="col-lg-4"> 
@@ -403,7 +397,7 @@
                               </div>
                               <div class="content">
                                   <p>Support</p>
-                                  <a href="#">Available 24/7 for All Inquiries</a>
+                                  <a href="https://wa.me/919666618459" target="_blank"> Available 24/7 for All Inquiries</a>
                               </div>
                           </div>
                         </div>                      
@@ -423,8 +417,9 @@
                 <p>I’m Nagarjuna Reddy Alla, Managing Director of Siva Constructions. Contact me for any questions about our projects.</p>
                 <div class="space32"></div>
                 <div class="btn-area1">
-                  <a href="https://wa.me/919666618459" target="_blank" class="header-btn2">
-                      <img src="assets/img/icons/whatsapp.svg" alt="WhatsApp Icon"> Chat with Us on WhatsApp
+                  <a href="https://wa.me/919666618459?text=Hello,%20I%20am%20reaching%20out%20from%20your%20website%20https://sivaconstructions.co.in.%20I%20am%20interested%20in%20your%20services%20and%20would%20like%20to%20discuss%20further."
+                    target="_blank" class="header-btn2">
+                    <img src="assets/img/icons/whatsapp.svg" alt="WhatsApp Icon"> Chat with Us on WhatsApp
                   </a>
                 </div>              
               </div>            

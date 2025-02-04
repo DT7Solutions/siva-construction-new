@@ -607,6 +607,9 @@ blockquote span{
 }
 
 /* Contact Page */
+.form-control:focus {
+    box-shadow: none;
+}
 .contact-inner-area .contact-inner-boxarea,
 .contact-inner-area .contact-author-box {
     background: var(--sec-light-bg);
@@ -629,6 +632,9 @@ blockquote span{
     background: var(--pri-light-bg);
 }
 .contact-inner-area .contact-inner-boxarea .contact-box:hover {
+    background: var(--secondary-color);
+}
+.contact-inner-area .contact-inner-boxarea .contact-input-section .input-area .nice-select ul li:hover {
     background: var(--secondary-color);
 }
 

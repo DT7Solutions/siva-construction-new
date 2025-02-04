@@ -1121,6 +1121,7 @@ $(document).ready(function() {
   });
 });
 
+/*======== Contact Form Submition ==========*/
 
 
 /*DOWNLOAD E-CATALOGUE BROCHURES-CATALOGUE*/
