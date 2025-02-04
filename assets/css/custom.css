@@ -13,6 +13,10 @@ a:hover {
     color: var(--secondary-color);
 }
 
+.text-justify {
+    text-align: justify !important;
+}
+
 /* Buttons */
 .header-btn2 {
     color: var(--ztc-text-text-1);
@@ -716,15 +720,65 @@ blockquote span{
 .gallery4-section-area .gallery-images-slider .owl-nav button:hover {
     background: var(--secondary-color);
 }
+.gallery4-section-area .space-margin60 {
+    margin-bottom: 5%
+}
+.gallery4-section-area .gallery-images-slider .img1 img {
+   max-height: 500px;
+}
+.about7-section-area .service-images-area .author-header {
+    padding: 0 0 0 5%;
+}
+.apartment-details-left .apartment-author-area .list-area .text a {
+    color: var(--ztc-text-text-8);
+    font-family: var(--ztc-family-font2);
+    font-size: var(--ztc-font-size-font-s18);
+    font-style: normal;
+    font-weight: var(--ztc-weight-semibold);
+    line-height: 24px;
+    display: inline-block;
+    transition: all 0.4s;
+    padding-left: 15px;
+}
+
 
 
 /* Responsive Mode */
+@media only screen and (max-width: 991px) {
+    .mobile-sidebar {
+        width: 65%;
+    }
+    .heading2 h2 {
+        font-size: var(--ztc-font-size-font-s38);
+        font-weight: var(--ztc-weight-bold);
+        line-height: 42px;
+    }
+    .heading2 h5 {
+        letter-spacing: normal;
+    }
+    .property-content {
+        margin-left: 0% !important;
+    }
+}
 @media only screen and (max-width: 768px) {
     .footer-menu .menu {
         flex-direction: column;
     }
     .footer-menu .menu li {
         margin: 1% 0%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .mobile-sidebar {
+        width: 100%;
+    }
+    .heading2 h2 {
+        font-size: var(--ztc-font-size-font-s28);
+        font-weight: var(--ztc-weight-bold);
+        line-height: 32px;
+    }
+    .heading2 h5 {
+        font-size: var(--ztc-font-size-font-s16);
     }
 }
 
@@ -802,4 +856,9 @@ blockquote span{
 .gallery-v2-section-area .gallery3-slider-area .owl-nav button:hover {
     background: var(--secondary-color);
     color: var(--white-color);
+}
+
+/* Blogs Section In Home */
+.blog-section-area .blog-boxarea .content-area a.readmore {
+    display: none
 }
