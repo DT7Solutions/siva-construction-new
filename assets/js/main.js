@@ -1122,6 +1122,30 @@ $(document).ready(function() {
 });
 
 /*======== Contact Form Submition ==========*/
+$(document).ready(function() {
+  // Initialize EmailJS with your public key
+  emailjs.init("your_public_key");
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    debugger
+    event.preventDefault();
+    document.getElementById('submit-btn').disabled = true;
+    emailjs.send('your_service_id', 'your_template_id', this)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        document.getElementById('form-response-success').style.display = 'block';
+        document.getElementById('form-response-error').style.display = 'none';
+        document.getElementById('contact-form').reset();
+        document.getElementById('submit-btn').disabled = false;
+      }, function(error) {
+        console.log('FAILED...', error);
+        document.getElementById('form-response-error').style.display = 'block';
+        document.getElementById('form-response-success').style.display = 'none';
+        document.getElementById('contact-form').reset();
+        document.getElementById('submit-btn').disabled = false;
+      });
+  });
+});
+
 
 
 /*DOWNLOAD E-CATALOGUE BROCHURES-CATALOGUE*/
