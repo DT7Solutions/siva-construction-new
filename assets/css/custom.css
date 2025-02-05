@@ -430,6 +430,20 @@ blockquote span{
 .apartment-details-left .apartment-author-area .list-area {
     background: var(--sec-light-bg);
 }
+.apartment-details-left .apartment-author-area .features .list-area {
+    min-height: 115px;
+}
+.apartment-details-left .apartment-author-area .list-area .text {
+    color: var(--ztc-text-text-8);
+    font-family: var(--ztc-family-font2);
+    font-size: var(--ztc-font-size-font-s18);
+    font-style: normal;
+    font-weight: var(--ztc-weight-semibold);
+    line-height: 24px;
+    display: inline-block;
+    transition: all 0.4s;
+    padding-left: 15px;
+}
 .apartment6-section-area .apartment-featured-area .content-area a {
     color: var(--ztc-text-text-17);
     font-family: var(--ztc-family-font2);
@@ -442,6 +456,32 @@ blockquote span{
 }
 .apartment6-section-area .apartment-featured-area .content-area a:hover {
     color: var(--secondary-color);
+}
+.specification-map .specification ul {
+    width: 100%;
+}
+.specification-map .specification ul li {
+    color: var(--ztc-text-text-17);
+    font-family: var(--ztc-family-font2);
+    font-size: var(--ztc-font-size-font-s16);
+    font-style: normal;
+    line-height: 18px;
+    display: block;
+    transition: all 0.4s;
+    margin: 7.5% 0%;
+    background: var(--sec-light-bg);
+    padding: 25px 20px;
+    border-radius: 8px;
+}
+.specification-map .specification ul li img {
+    margin: 0 8px 0 0;
+}
+
+@media only screen and (max-width: 991px) {
+    .specification-map .specification ul li {
+        margin: 2.5% 0%;
+        padding: 10px 20px;
+    }
 }
 
 /* Completed Projects */
@@ -729,17 +769,6 @@ blockquote span{
 .about7-section-area .service-images-area .author-header {
     padding: 0 0 0 5%;
 }
-.apartment-details-left .apartment-author-area .list-area .text a {
-    color: var(--ztc-text-text-8);
-    font-family: var(--ztc-family-font2);
-    font-size: var(--ztc-font-size-font-s18);
-    font-style: normal;
-    font-weight: var(--ztc-weight-semibold);
-    line-height: 24px;
-    display: inline-block;
-    transition: all 0.4s;
-    padding-left: 15px;
-}
 
 
 
@@ -759,6 +788,10 @@ blockquote span{
     .property-content {
         margin-left: 0% !important;
     }
+    .footer4-section-area .footer-menu-area .footer-elements .footer-logo {
+        width: 100%;
+        height: auto;
+     }
 }
 @media only screen and (max-width: 768px) {
     .footer-menu .menu {
@@ -766,6 +799,10 @@ blockquote span{
     }
     .footer-menu .menu li {
         margin: 1% 0%;
+    }
+    .footer4-section-area .footer-menu-area .footer-call-area a {
+        font-size: var(--ztc-font-size-font-s42);
+        line-height: 45px;
     }
 }
 @media only screen and (max-width: 575px) {
